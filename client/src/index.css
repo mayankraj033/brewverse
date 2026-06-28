@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.nav-item,
+.about_us_section_link {
+  @apply px-3 py-2 text-white font-medium transition-colors cursor-pointer duration-200 hover:text-[#efb848];
+}
+
+.proof_card div {
+  @apply flex justify-center flex-col items-center mx-5 my-10 rounded-2xl;
+}
+
+.proof_card .count {
+  @apply text-3xl font-bold;
+}
+
+@layer base {
+  body {
+    @apply text-text bg-background;
+  }
+}
+.legal-pages-links,
+.footer-important-links {
+  @apply underline;
+}
+.footer-bottom-link {
+  @apply hover:cursor-pointer hover:text-blue-600;
+}
+
+@theme {
+  --color-primary: #2563eb;
+  --color-secondary: #d3b507;
+  --color-background: #040001;
+  --color-surface: #ffffff;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-text: #fff;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --radius-card: 1rem;
+  --shadow-card: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
